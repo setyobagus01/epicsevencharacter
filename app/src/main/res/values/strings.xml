@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyEpicSeven</string>
+    <string name="character_name">Character Name</string>
+    <string name="detail">Detail</string>
+    <string name="about">About</string>
+    <string name="skill">Skills</string>
+    <string name="skillb">Skills b</string>
+    <string name="skillc">Skills c</string>
+    <string name="skilldetail">Skill Detail</string>
+    <string name="skilldetailb">Skill Detail b</string>
+    <string name="skilldetailc">Skill Detail c</string>
+    <string name="myname">Setyo Bagus Nugraha</string>
+    <string name="myemail">setyobagus01@gmail.com</string>
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        tools:context=".activity_detail">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_view"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img_item_character"
+                    android:layout_width="150dp"
+                    android:layout_height="220dp"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toRightOf="@+id/img_item_character"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/character_name"/>
+
+                <TextView
+                    android:id="@+id/tv_item_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_item_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/img_item_character"
+                    android:ellipsize="end"
+                    tools:text="@string/detail"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_item_skill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/card_view"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/skill"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_skill"
+            android:id="@+id/card_vieww"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img_item_skill"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/lightofjudgment"
+                    tools:src="@android:color/darker_gray"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_item_skill"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/skill"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_skill_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/img_item_skill"
+                    android:ellipsize="end"
+                    tools:text="@string/skilldetail"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_vieww"
+            android:id="@+id/card_viewww"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img_item_skillb"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    tools:src="@android:color/darker_gray"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_nameb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_item_skillb"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/skillb"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_detailb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_skill_nameb"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/img_item_skillb"
+                    android:ellipsize="end"
+                    tools:text="@string/skilldetailb"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_viewww"
+            android:id="@+id/card_viewwww"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/img_item_skillc"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    tools:src="@android:color/darker_gray"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_namec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_item_skillc"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:text="@string/skillc"/>
+
+                <TextView
+                    android:id="@+id/tv_skill_detailc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_skill_namec"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/img_item_skillc"
+                    android:ellipsize="end"
+                    tools:text="@string/skilldetailc"/>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
